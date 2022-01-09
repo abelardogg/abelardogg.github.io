@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="assets/img/logo.svg">
+    <link rel="icon" href="assets/img/Hammer.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,38 +10,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/colours.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/buttons.css">
     <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
     
 </head>
-<body>
-    <div id="main">
-        <div id="nav">
-            <div id="nav-logo">
-                <img src="assets/img/logo.svg" alt="logo" height="40">
-            </div>
-            <div id="nav-sections">
-                <a href="#" class="nav-section">Home</a>
-                <a href="#" class="nav-section">JS</a>
-                <a href="#" class="nav-section">Components</a>
-            </div>
-            <div id="nav-backdrop"></div>
-            <button id="nav-switch" class="btn">
-                <img id="nav-mobile-switch" src="assets/img/hamburguer.svg" alt="logo" height="40">
-            </button>
-        </div>
-        <div id="test" class="cat black sleep">
-            
-        </div>
+<body style="position: relative;">
+    <div id="nav" class="sticky">
+        <a class="nav-link" href="https://www.workana.com/freelancer/4637d33b20e407f582750662332a415c">Workana</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/abelardo-gandara-a97ab611a/">LinkedIn</a>
     </div>
-    <footer style="height: 200px; width: 100%; background-color: rgb(198, 232, 255);">
+    <div class="container">
+        <div id="main-data" class="d-flex space-betwen align-center">
+            <div id="main-image" class="d-flex  align-center">
+                <div id="img" style="background-image: url('assets/img/pic.jpg');"></div>
+                <div id="main-title" style="margin-left: 15px;">
+                    <h3 style="margin:0">Abelardo Gandara</h3>
+                    <h4 class="lite-grey" style="margin:0">Frontend Developer</h4>
+                </div>
+            </div>
+            <div id="main-summary" class="d-flex">
+                <div id="main-skills">
+                    <p class="h4 lite-grey">Skils</p>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+                <div id="other-skills">
+                    <p class="h4 lite-grey">Frameworks, libraries & Tools</p>
+                    <ul>
+                        <li>Bootstrap (3, 4)</li>
+                        <li>jQuery</li>
+                        <li>React</li>
+                        <li>NodeJS</li>
+                        <li>express</li>
+                        <li>ejs</li>
+                        <li>github</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    </footer>
+        <div id="contact-links">
+            <h4>Contact & Work</h4>
+            <div class="d-flex justify-center">
+                <a class="d-flex network-img" href="https://www.workana.com/freelancer/4637d33b20e407f582750662332a415c" target="_blank"><img src="assets/img/logos/workana.png" alt="workana"></a>
+                <a class="d-flex network-img" href="https://www.linkedin.com/in/abelardo-gandara-a97ab611a/" target="_blank"><img src="assets/img/logos/linkedin.svg" alt="linkedin"></a>
+                <a class="d-flex network-img" href="https://codepen.io/abelardogg" target="_blank"><img src="assets/img/logos/codepen.png" alt="codepen"></a>
+                <a class="d-flex network-img" href="https://github.com/abelardogg" target="_blank"><img src="assets/img/logos/github.png" alt="github"></a>
+            </div>
+        </div>
 
-    <script src="assets/js/subarashi.js"></script>
-    <script src="assets/js/subarashi-wrapper.js"></script>
-    <script src="assets/js/nav.js"></script>
-    
+
+    </div>
 </body>
 </html>

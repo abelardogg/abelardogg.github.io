@@ -31,4 +31,3 @@ const $ = function(querySelector){
     
 }
 
-const navSection = $('.nav-section')
