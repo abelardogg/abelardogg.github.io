@@ -29,4 +29,14 @@ export const projects: Project[] = [
     repo: "https://github.com/abelardogg/product-page",
     preview: "/previews/product-page.webp",
   },
+  {
+    id: "agenda",
+    name: "Agenda de Citas",
+    description: "Agenda para barbería con calendario de disponibilidad por día, horarios por barbero y resumen del turno.",
+    category: "funcional",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    demo: "https://agenda-eta-eight.vercel.app/",
+    repo: "https://github.com/abelardogg/agenda",
+    preview: "/previews/agenda.webp",
+  },
 ]
