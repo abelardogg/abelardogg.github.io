@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import type { Project } from '../data/projects'
 
 interface Props {
@@ -47,17 +47,6 @@ export default function ProjectCard({ project }: Props) {
             >
               <ExternalLink size={14} />
               Ver demo
-            </a>
-          )}
-          {project.repo && (
-            <a
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm text-text hover:text-text-heading transition-colors"
-            >
-              <Github size={14} />
-              Código
             </a>
           )}
         </div>

@@ -1,8 +1,5 @@
 import Footer from '../components/Footer'
 
-const mainSkills = ['React', 'Next.js', 'TypeScript', 'Tailwind']
-const otherSkills = ['Figma', 'Node.js', 'Git', 'Vercel']
-
 export default function About() {
   return (
     <>
@@ -12,32 +9,15 @@ export default function About() {
             Sobre mí
           </h1>
 
-          <p className="text-text text-lg leading-relaxed mb-6">
-            Llevo 10 años construyendo productos web con atención al detalle: desde la arquitectura del componente hasta cómo lo indexa Google. Me especializo en frontend con React y Next.js, cuidando siempre la experiencia de usuario y el rendimiento. Disponible para proyectos freelance de cualquier escala.
+          <p className="text-text text-lg leading-relaxed mb-4">
+            Ingeniero de software desde 2016. Construyo sitios y aplicaciones
+            web de principio a fin, con amplia experiencia en UI/UX, SEO y
+            performance para sitios veloces.
           </p>
 
-          <div className="space-y-4">
-            <div>
-              <p className="text-text-heading text-sm font-semibold mb-2">Principales</p>
-              <div className="flex flex-wrap gap-2">
-                {mainSkills.map((s) => (
-                  <span key={s} className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <p className="text-text-heading text-sm font-semibold mb-2">Complementarios</p>
-              <div className="flex flex-wrap gap-2">
-                {otherSkills.map((s) => (
-                  <span key={s} className="px-3 py-1 bg-surface-3 text-text-muted text-sm rounded-full">
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
+          <p className="text-text text-lg leading-relaxed">
+            Disponible para proyectos freelance.
+          </p>
         </div>
       </section>
       <Footer />

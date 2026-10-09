@@ -24,12 +24,9 @@ export default function Projects() {
   return (
     <section id="proyectos" className="py-24 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-text-heading mb-2">
+        <h2 className="text-3xl sm:text-4xl font-bold text-text-heading mb-8">
           Proyectos
         </h2>
-        <p className="text-text mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
 
         <div className="flex flex-wrap gap-2 mb-10">
           {categories.map((cat) => (

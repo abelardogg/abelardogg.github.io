@@ -39,7 +39,7 @@ export default function Hero() {
             abgg <span className="text-accent">development</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/60 max-w-xl leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Desarrollo y diseño web
           </p>
         </div>
       </div>

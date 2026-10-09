@@ -5,7 +5,6 @@ export interface Project {
   category: 'diseno' | 'datos' | 'funcional' | 'contenido'
   stack: string[]
   demo?: string
-  repo?: string
   preview: string
 }
 
@@ -26,7 +25,6 @@ export const projects: Project[] = [
     category: "funcional",
     stack: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
     demo: "https://product-page-olive-nine.vercel.app/",
-    repo: "https://github.com/abelardogg/product-page",
     preview: "/previews/product-page.webp",
   },
   {
@@ -36,7 +34,6 @@ export const projects: Project[] = [
     category: "funcional",
     stack: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
     demo: "https://agenda-eta-eight.vercel.app/",
-    repo: "https://github.com/abelardogg/agenda",
     preview: "/previews/agenda.webp",
   },
 ]
