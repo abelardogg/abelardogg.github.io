@@ -42,6 +42,7 @@ export const projects: Project[] = [
     description: "Dashboard de una agencia de seminuevos: ingresos por periodo, formas de pago, inventario y gastos de operación.",
     category: "datos",
     stack: ["Next.js", "TypeScript", "Tailwind", "SVG"],
+    demo: "https://sales-dashboard-livid-theta.vercel.app/",
     preview: "/previews/sales-dashboard.webp",
   },
 ]
