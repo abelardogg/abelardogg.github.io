@@ -38,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     id: "sales-dashboard",
-    name: "Tablero de Ventas",
+    name: "Dashboard de Ventas",
     description: "Dashboard de una agencia de seminuevos: ingresos por periodo, formas de pago, inventario y gastos de operación.",
     category: "datos",
     stack: ["Next.js", "TypeScript", "Tailwind", "SVG"],
