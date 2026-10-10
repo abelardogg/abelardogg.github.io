@@ -22,10 +22,10 @@ export default function Projects() {
       : projects.filter((p) => p.category === active)
 
   return (
-    <section id="proyectos" className="py-24 px-4">
+    <section id="showcase" className="py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-text-heading mb-8">
-          Proyectos
+          Showcase
         </h2>
 
         <div className="flex flex-wrap gap-2 mb-10">
