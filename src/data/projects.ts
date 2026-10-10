@@ -1,3 +1,11 @@
+export type Estado = 'desarrollo' | 'beta' | 'estable'
+
+export const etiquetaEstado: Record<Estado, string> = {
+  desarrollo: 'En desarrollo',
+  beta: 'Beta',
+  estable: 'Estable',
+}
+
 export interface Project {
   id: string
   name: string
@@ -6,6 +14,7 @@ export interface Project {
   stack: string[]
   demo?: string
   preview: string
+  estado?: Estado
 }
 
 export const projects: Project[] = [
@@ -44,5 +53,18 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Tailwind", "SVG"],
     demo: "https://sales-dashboard-livid-theta.vercel.app/",
     preview: "/previews/sales-dashboard.webp",
+  },
+]
+
+export const personalProjects: Project[] = [
+  {
+    id: "guitar-lessons",
+    name: "Lecciones de Guitarra",
+    description: "Mástil interactivo con sonido real sintetizado en el navegador, metrónomo y las cinco posiciones CAGED. Primera lección: la escala mayor.",
+    category: "contenido",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Web Audio"],
+    demo: "https://guitar-lessons-zeta.vercel.app/",
+    preview: "/previews/guitar-lessons.webp",
+    estado: "desarrollo",
   },
 ]

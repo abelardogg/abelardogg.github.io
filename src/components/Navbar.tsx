@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const links = [
+  { label: 'Proyectos', section: 'proyectos', path: '/' },
   { label: 'Showcase', section: 'showcase', path: '/' },
   { label: 'Sobre mí', section: null, path: '/about' },
 ]

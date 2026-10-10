@@ -1,5 +1,5 @@
 import { ExternalLink } from 'lucide-react'
-import type { Project } from '../data/projects'
+import { etiquetaEstado, type Project } from '../data/projects'
 
 interface Props {
   project: Project
@@ -7,8 +7,13 @@ interface Props {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <article className="group bg-surface-2 border border-border rounded-xl overflow-hidden hover:border-accent/50 transition-colors">
-      <div className="aspect-video bg-surface-3 overflow-hidden">
+    <article className="group h-full flex flex-col bg-surface-2 border border-border rounded-xl overflow-hidden hover:border-accent/50 transition-colors">
+      <div className="aspect-video shrink-0 bg-surface-3 overflow-hidden relative">
+        {project.estado && (
+          <span className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur text-accent text-xs font-medium border border-accent/30">
+            {etiquetaEstado[project.estado]}
+          </span>
+        )}
         <img
           src={project.preview}
           alt={project.name}
@@ -17,12 +22,12 @@ export default function ProjectCard({ project }: Props) {
         />
       </div>
 
-      <div className="p-5">
-        <h3 className="text-text-heading font-semibold text-lg mb-1">
+      <div className="p-5 flex flex-col flex-1">
+        <h3 className="text-text-heading font-semibold text-lg mb-1 line-clamp-1">
           {project.name}
         </h3>
 
-        <p className="text-text text-sm leading-relaxed mb-4">
+        <p className="text-text text-sm leading-relaxed mb-4 line-clamp-3 min-h-[3.9375rem]">
           {project.description}
         </p>
 
@@ -37,7 +42,7 @@ export default function ProjectCard({ project }: Props) {
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mt-auto">
           {project.demo && (
             <a
               href={project.demo}
