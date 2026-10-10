@@ -36,4 +36,12 @@ export const projects: Project[] = [
     demo: "https://agenda-eta-eight.vercel.app/",
     preview: "/previews/agenda.webp",
   },
+  {
+    id: "sales-dashboard",
+    name: "Tablero de Ventas",
+    description: "Dashboard de una agencia de seminuevos: ingresos por periodo, formas de pago, inventario y gastos de operación.",
+    category: "datos",
+    stack: ["Next.js", "TypeScript", "Tailwind", "SVG"],
+    preview: "/previews/sales-dashboard.webp",
+  },
 ]
