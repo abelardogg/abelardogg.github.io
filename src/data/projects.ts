@@ -13,11 +13,19 @@ export interface Project {
   category: 'diseno' | 'datos' | 'funcional' | 'contenido'
   stack: string[]
   demo?: string
-  preview: string
+  preview?: string
   estado?: Estado
 }
 
 export const projects: Project[] = [
+  {
+    id: "trailinfo",
+    name: "TrailInfo",
+    description: "Catálogo de senderos de El Paso con un índice de dificultad de 0 a 100 por ruta: buscador con autocompletado, filtros y mapa topográfico interactivo.",
+    category: "datos",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Leaflet"],
+    demo: "https://city-info-inky.vercel.app/",
+  },
   {
     id: "web-invitations",
     name: "Invitaciones Web",

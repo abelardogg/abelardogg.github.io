@@ -14,12 +14,20 @@ export default function ProjectCard({ project }: Props) {
             {etiquetaEstado[project.estado]}
           </span>
         )}
-        <img
-          src={project.preview}
-          alt={project.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-        />
+        {project.preview ? (
+          <img
+            src={project.preview}
+            alt={project.name}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-surface-3 to-surface-2">
+            <span className="text-text-muted text-2xl font-semibold tracking-tight group-hover:text-text transition-colors">
+              {project.name}
+            </span>
+          </div>
+        )}
       </div>
 
       <div className="p-5 flex flex-col flex-1">
