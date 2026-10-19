@@ -25,6 +25,7 @@ export const projects: Project[] = [
     category: "datos",
     stack: ["Next.js", "TypeScript", "Tailwind", "Leaflet"],
     demo: "https://city-info-inky.vercel.app/",
+    preview: "/previews/trailinfo.webp",
   },
   {
     id: "web-invitations",
