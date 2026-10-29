@@ -62,6 +62,17 @@
       "demo": "https://guitar-lessons-zeta.vercel.app/",
       "preview": "/previews/guitar-lessons.webp",
       "estado": "desarrollo"
+    },
+    {
+      "posicion": 20,
+      "id": "tuner",
+      "name": "abx Tuner",
+      "description": "Afinador cromático y metrónomo en una PWA que funciona sin conexión. El audio se analiza en el dispositivo: sin cuentas ni anuncios.",
+      "category": "funcional",
+      "stack": ["TypeScript", "Vite", "Web Audio", "PWA"],
+      "demo": "https://tuner-phi.vercel.app/",
+      "preview": "/previews/tuner.webp",
+      "estado": "beta"
     }
   ]
 }
